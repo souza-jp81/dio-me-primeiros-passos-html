@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página - Módulo I - Primeiros Passos com HTML</title>
+</head>
+
+<body>
+    <h1 id="inicio">Módulo 1 - Primeiros Passos com HTML</h1>
+    <hr />
+
+    <h2>Índice</h2>
+    <ul>
+        <li><a href="#introducao">Introdução ao <abbr>HTML</abbr> na prática</a></li>
+        <li><a href="#formularios">Trabalhando com Formulários em <abbr>HTML</abbr></a></li>
+        <li><a href="#estruturando">Estruturando o <abbr>HTML</abbr></a></li>
+        <li><a href="#midias">Trabalhando com mídias utilizando o <abbr>HTML</abbr></a></li>
+        <li><a href="#tabelas">Criando Tabelas com <abbr>HTML</abbr></a></li>
+        <li><a href="#html-semantico">Entendendo <abbr>HTML</abbr> semântico</a></li>
+        <li><a href="#links">Links de referências</a></li>
+    </ul>
+
+    <h2 id="introducao">Introdução ao <abbr>HTML</abbr> na prática</h2><small><a href="#inicio">Início</a></small>
+    <p style="text-indent: 20px;">HTML (Linguagem de Marcação de Hipertexto) é a base para a construção de páginas web.
+        Ele define a estrutura e o
+        conteúdo de um site, utilizando tags para organizar elementos como texto, imagens e links. Aprender HTML na
+        prática envolve entender a sintaxe das tags e como elas interagem para criar a estrutura de um documento web.
+    </p>
+
+    <p style="text-indent: 20px;">As partes principais do elemento são:<br><br>
+        <strong><u>Tag de abertura:</u></strong> Consiste no nome do elemento, envolvido entre parênteses angulares de
+        abertura e fechamento. Isso indica onde o elemento começa, ou inicia a produzir efeito — neste caso, onde o
+        parágrafo se inicia.<br><br>
+        <strong><u>Tag de fechamento:</u></strong> É o mesmo que a tag de abertura, exceto que este inclui uma barra
+        diagonal antes do nome do
+        elemento. Indica onde o elemento termina — neste caso, onde fica o fim do parágrafo. Falhar em incluir o
+        fechamento de uma tag é um erro comum para iniciantes e pode levar a resultados estranhos.<br><br>
+        <strong><u>O conteúdo:</u></strong> Este é o conteúdo do elemento, que neste caso é somente texto.<br><br>
+        <strong><u>O elemento:</u></strong> A tag de abertura, mais a tag de fechamento, mais o conteúdo, é igual ao
+        elemento.
+    </p>
+
+    <h3 style="text-indent: 20px;"><u><i>Tags HTML: quais são as mais comuns e como identificá-las</i></u></h3>
+
+    <p>Entender o que é e como funciona cada tag HTML é uma etapa essencial para implementá-las corretamente no código
+        HTML do seu próprio site.</p>
+
+    <p><strong>O que são tags HTML?</strong><br><br>
+        Tags HTML são instruções que informam ao navegador como formatar o texto. Você pode usar tags para definir
+        itálico, quebras de linha, objetos, bullet points e muito mais.<br>
+
+        Essas tags estão presentes no HTML (Hypertext Markup Language) de todas as páginas da internet.
+
+    <p><strong>Como as páginas leem as tags HTML?</strong></p>
+    Os servidores leem o código HTML para entender e renderizar o conteúdo corretamente. Essa leitura é feita de
+    cima para baixo, da mesma forma que você está lendo este artigo agora.<br>
+
+    Você pode usar quantas tags quiser para formatar o conteúdo. No entanto, existem algumas regras essenciais sobre
+    tags HTML que você precisará seguir.
+
+    <p><strong> Uma tag HTML deve conter três partes:</strong></p>
+
+    <ol>
+        <li>Uma tag de abertura — começando com um símbolo (<);< /li>
+        <li>Conteúdo — instruções curtas para exibir o elemento na página;</li>
+        <li>Uma tag de fechamento — terminando com um símbolo </>.</li>
+    </ol>
+
+    Algumas tags HTML podem ser abertas. Isso significa que elas não precisam ser fechadas com </>. Essas tags são
+    normalmente usadas para metadados ou quebras de linha.</p>
+
+    <h3 style="text-indent: 20px;"><u><i>Qual é a diferença entre elementos, atributos e tags HTML?</i></u></h3>
+
+    <p>Um elemento HTML é um item da página; faz parte do conteúdo dela. Uma tag HTML altera a maneira esse elemento
+        aparece. Já um atributo HTML descreve as características desse elemento. Veja como elementos, tags e atributos
+        funcionam juntos:</p>
+
+    <ul>
+        <li>Tags HTML contêm instruções para exibir um elemento na página. Elas começam com um < e terminam com um>.
+                (Por exemplo: &ltb&gt Marca em negrito &lt/b&gt)</li>
+        <li>Elementos HTML são o conteúdo da página inserido nas tags. (&ltb&gt Marca em negrito &lt/b&gt)</li>
+        <li>Atributos HTML fornecem informações adicionais sobre os elementos e aparecem na tag. Por exemplo: &lthtml
+            lang="pt-BR"&gt.</li>
+    </ul>
+
+    <h2 id="formularios">Trabalhando com Formulários em <abbr>HTML</abbr></h2><small><a
+            href="#inicio">Início</a></small>
+    <p>Formulários HTML são elementos cruciais em páginas web, permitindo que os usuários interajam com o site e enviem
+        dados. Eles são compostos por diversos widgets, como campos de texto, botões, caixas de seleção e menus, que
+        facilitam a coleta de informações.<br><br> A estrutura básica de um formulário HTML envolve a tag
+        &ltform&gt, que define o formulário e seus atributos, e elementos internos como &ltinput&gt, &ltselect&gt, e
+        &lttextarea&gt para os campos de entrada. </p>
+
+    <h3 style="text-indent: 20px;"><u><i>Estrutura e Componentes:</i></u></h3>
+
+    <ul>
+        <li>&ltform&gt - O elemento principal que engloba todos os componentes do formulário. Define a ação (onde os
+            dados serão enviados) e o método de envio (como os dados serão enviados). </li>
+        <li>&ltinput&gt - Um dos elementos mais versáteis, com vários tipos, como texto, senha, email, checkbox, radio
+            button e botão. </li>
+        <li>&lttextarea&gt - Permite a entrada de texto multilinha, ideal para campos maiores como comentários ou
+            mensagens. </li>
+        <li>&ltselect&gt - Cria um menu suspenso, permitindo que o usuário selecione uma opção de uma lista predefinida.
+        </li>
+        <li>&ltlabel&gt - Associado a um campo de entrada, fornece uma descrição textual do mesmo, melhorando a
+            acessibilidade e usabilidade. </li>
+        <li>&ltfieldset&gt e &ltlegend&gt - Agrupam campos relacionados e fornecem um título para o grupo,
+            respectivamente, melhorando a organização visual e estrutural do formulário. </li>
+    </ul>
+
+    <h3 style="text-indent: 20px;"><u><i>Atributos Importantes:</i></u></h3>
+
+    <ul>
+        <li>action - Especifica o destino dos dados do formulário (geralmente uma URL de um servidor).</li>
+        <li>method - Define o método HTTP usado para enviar os dados (GET ou POST).</li>
+        <li>type - No elemento &ltinput&gt, define o tipo de campo (texto, senha, checkbox, etc.). </li>
+        <li>name - Atribui um nome único a cada campo, essencial para o processamento dos dados no servidor. </li>
+    </ul>
+
+    <h2 id="estruturando">Estruturando o <abbr>HTML</abbr></h2><small><a href="#inicio">Início</a></small>
+    <p style="text-indent: 20px;">Nesse tópico abordaremos como formatar textos, pensando em acessibilidade, bem como
+        compreender a melhor forma de estruturar o HTML, preparando para a aplicação do CSS.</p>
+
+    <ol>
+        <li style="text-indent: 20px;"><u><i>Formatando textos - tag's <strong>strong</strong>, <i>i</i>, <b>b</b> e
+                    <u>u</u></i></u></li>
+        <ul><br>
+            <li>Tag &ltstrong&gt - A tag &ltstrong&gt em HTML serve para marcar um texto como tendo forte importância ou
+                ênfase. Ela não apenas torna o texto em negrito, mas também comunica ao navegador e a outras
+                ferramentas que aquele trecho é semanticamente importante. </li><br>
+            <li>Tag &lti&gt - A tag &lti&gt em HTML serve para marcar uma parte do texto que deve ser exibida em
+                itálico,
+                com um significado semântico diferente do elemento &ltem&gt (ênfase). Embora o resultado visual possa
+                ser o mesmo, o &lti&gt é usado para indicar uma diferença na apresentação do texto, como um termo
+                técnico, um pensamento, uma palavra estrangeira, ou qualquer contexto onde a itálico seja
+                uma forma de diferenciação visual. </li><br>
+            <li>Tag &ltb&gt - A tag &ltb&gt em HTML é usada para deixar o texto em negrito. Ela é um elemento de
+                formatação que altera a aparência visual do texto, mas não adiciona significado semântico ao conteúdo.
+                Em
+                outras palavras, a tag &ltb&gt apenas torna o texto mais visível, sem indicar sua importância ou função
+                na página. </li><br>
+            <li>Tag &ltu&gt - A tag &ltu&gt em HTML serve para sublinhar um texto, indicando que ele deve ser exibido
+                com um
+                traço embaixo. No entanto, seu uso é considerado obsoleto em HTML5, sendo preferível utilizar a
+                combinação da tag &ltspan&gt com a propriedade CSS text-decoration: underline para realizar a mesma
+                função, com maior flexibilidade e semântica. </li><br>
+        </ul><br>
+        <li style="text-indent: 20px;"><u><i>Formatando textos - tag font</i></u> - A tag &ltfont&gt em HTML serve para
+            definir a aparência da fonte de um texto, como o tipo, tamanho e cor. No entanto, ela é considerada
+            obsoleta no HTML5, e o recomendado é utilizar CSS para estilização de fontes, pois é uma prática mais
+            moderna e flexível. </li><br>
+        <li style="text-indent: 20px;"><u><i>Tag's div e span</i></u></li><br>
+        <ul>
+            <li>Tag &ltdiv&gt - A tag &ltdiv&gt em HTML é usada para criar divisões ou seções em um documento. Ela
+                funciona como um contêiner genérico para agrupar outros elementos HTML e facilitar a aplicação de
+                estilos com CSS ou interações com JavaScript. Embora não tenha significado semântico próprio (não
+                representa nada específico para navegadores ou mecanismos de busca), é muito útil para organizar layouts
+                e manipular o conteúdo visualmente.</li><br>
+            <li>Tag &ltspan&gt - A tag &ltspan&gt em HTML é usada como um contêiner em linha genérico para agrupar
+                elementos
+                e aplicar estilos ou manipular partes específicas de texto dentro de outros elementos. Ela não
+                possui significado semântico próprio, ou seja, não representa um tipo específico de conteúdo como um
+                parágrafo ou título. </li><br>
+        </ul><br>
+        <li style="text-indent: 20px;"><u><i>Tag fieldset</i></u> - A tag &ltfieldset&gt em HTML serve para agrupar
+            elementos
+            relacionados dentro de um formulário, criando uma espécie de "caixa" visual ao redor desses
+            elementos. É usada para organizar formulários e torná-los mais claros, especialmente quando há
+            muitos campos ou informações. </li><br>
+        <li style="text-indent: 20px;"><u><i>Tag embed</i></u> - A tag &ltembed&gt em HTML serve para incorporar
+            conteúdo
+            externo, como vídeos, áudios, documentos PDF ou outros tipos de mídia, diretamente em uma página web. Ela
+            age como um contêiner para esse conteúdo, permitindo que ele seja exibido dentro da estrutura da página, em
+            vez de exigir que o usuário acesse um link externo para visualizá-lo. </li><br>
+        <li style="text-indent: 20px;"><u><i>Tag Iframe</i></u> - A tag &ltiframe&gt em HTML, que significa "inline
+            frame",
+            serve para incorporar outro documento HTML dentro de uma página web. Basicamente, ela cria uma "janela"
+            onde um conteúdo externo, como um vídeo do YouTube, um mapa do Google Maps, ou até mesmo uma página
+            inteira, pode ser exibido. </li><br>
+    </ol>
+
+
+
+    <h2 id="midias">Trabalhando com mídias utilizando o <abbr>HTML</abbr></h2><small><a
+            href="#inicio">Início</a></small>
+    <h3 style="text-indent: 20px;"><u><i>Audio e video na web</i></u></h3>
+    <p style="text-indent: 20px;">Nos primeiros dias, as tecnologias web nativas, como o HTML, não tinham a capacidade
+        de incorporar vídeo e áudio
+        na Web, de modo que as tecnologias proprietárias (ou baseado em plugin) como o Flash (e depois, Silverlight)
+        tornaram-se populares para lidar com esse conteúdo.<br> Esse tipo de tecnologia funcionou bem, mas teve vários
+        problemas, incluindo não funcionar bem com recursos HTML/CSS, problemas de segurança e problemas de
+        acessibilidade.</p>
+    <p style="text-indent: 20px;">Felizmente, alguns anos depois, o HTML5 especificação tinha tais recursos adicionados,
+        com o &ltvideo&gt e &ltaudio&gt elementos, e alguns novos brilhantes JavaScript APIs por controlá-los.</p>
+
+    <h4>O elemento &ltvideo&gt - permite incorporar um vídeo com muita facilidade. Tem como atributos:</h4>
+    <ul>
+        <li><u>src:</u> O atributo src contém um caminho para o vídeo que você deseja incorporar. Funciona exatamente da
+            mesma
+            maneira.</li><br>
+        <li><u>controls:</u> Os usuários devem poder controlar a reprodução de vídeo e áudio (isso é especialmente
+            crítico para
+            pessoas que possuem epilepsia.) Você deve usar o atributo controls para incluir a própria interface de
+            controle do navegador ou criar sua interface usando o apropriado JavaScript API. No mínimo, a interface deve
+            incluir uma maneira de iniciar e parar a mídia e ajustar o volume.</li><br>
+        <li><u>width e height:</u> Você pode controlar o tamanho do vídeo com esses atributos ou com CSS. Nos dois
+            casos, os
+            vídeos mantêm sua proporção largura-altura nativa - conhecida como proporção de tela. Se a proporção não for
+            mantida pelos tamanhos definidos, o vídeo aumentará para preencher o espaço horizontalmente, e o espaço não
+            preenchido receberá apenas uma cor sólida de fundo por padrão.</li><br>
+        <li><u>autoplay:</u> Faz com que o áudio ou o vídeo comece a ser reproduzido imediatamente, enquanto o restante
+            da
+            página está sendo carregado. É aconselhável não usar vídeo (ou áudio) de reprodução automática em seus
+            sites, porque os usuários podem achar isso realmente irritante.</li><br>
+        <li><u>loop:</u> Faz com que o vídeo (ou áudio) comece a ser reproduzido novamente sempre que terminar. Isso
+            também
+            pode ser irritante, portanto, use apenas se for realmente necessário.</li><br>
+        <li><u>muted:</u> Faz com que a mídia seja reproduzida com o som desativado por padrão.</li><br>
+        <li><u>poster:</u> O URL de uma imagem que será exibida antes da reprodução do vídeo. Destina-se a ser usado
+            para uma
+            tela inicial ou tela de publicidade.</li><br>
+        <li><u>preload:</u> Usado para armazenar arquivos grandes em buffer; pode levar um dos três valores: "none" -
+            não
+            armazena em buffer o arquivo; "auto" - armazena em buffer o arquivo de mídia; "metadata" - armazena em
+            buffer apenas os metadados do arquivo</li>
+    </ul>
+
+    <h2 id="tabelas">Criando Tabelas com <abbr>HTML</abbr></h2><small><a href="#inicio">Início</a></small>
+    <p style="text-indent: 20px;">Para criar tabelas em HTML, utilize as tags &lttable&gt, &lttr&gt, &ltth&gt e
+        &lttd&gt. A tag &lttable&gt define
+        a tabela,&lttr&gt define uma linha, &ltth&gt define um cabeçalho de coluna e
+        &lttd&gt define uma célula de dados.</p>
+
+    <h3 style="text-indent: 20px;">Elementos importantes:</h3>
+    <ul>
+        <li>&lttable&gt: Define a tabela.</li>
+        <li>&lttr&gt: Define uma linha na tabela.</li>
+        <li>&ltth&gt: Define um cabeçalho de coluna. Geralmente formatado em negrito e centralizado.</li>
+        <li>&lttd&gt: Define uma célula de dados na tabela. </li>
+    </ul>
+
+    <h3 style="text-indent: 20px;">Recursos Adicionais:</h3>
+    <ul>
+        <li><strong>Mesclando células:</strong> Utilize <i>colspan</i> para mesclar colunas e <i>rowspan</i> para
+            mesclar linhas. </li>
+        <li><strong>Cabeçalho da tabela:</strong> Use a tag <i>&ltcaption&gt</i> para adicionar um título à tabela, que
+            aparece acima dela. </li>
+        <li><strong>Estrutura:</strong> Use &ltthead&gt, &lttbody&gt e &lttfoot&gt para separar o cabeçalho, corpo e
+            rodapé da tabela, respectivamente, melhorando a organização do código e a acessibilidade. </li>
+    </ul>
+
+    <h2 id="html-semantico">Entendendo <abbr>HTML</abbr> semântico</h2><small><a href="#inicio">Início</a></small>
+    <p style="text-indent: 20px;">A forma de utilizar a HTML na construção de páginas web vem
+        sendo aprimorada.
+        Atualmente, o conceito de Web
+        Semântica sugere que utilizemos os recursos dos quais dispomos com mais precisão para
+        definir melhor o
+        significado do conteúdo dos nossos documentos.</p>
+    <p style="text-indent: 20px;">Relacionado a isso, a versão 5 da HTML trouxe novas tags que
+        facilitam a leitura do conteúdo tanto por computadores, quanto por pessoas
+        (programadores), uma vez que
+        explicitam o objetivo de cada elemento que compõe a página. Além dessas novas tags,
+        outras já existentes
+        ganharam mais importância e tiveram seu uso correto enfatizado.</p>
+    <img src="./assets/html-nao-semantico-html-semantico.webp" width="500px" title="HTML semântico">
+
+    <h2 id="links">Links de referências</h2><small><a href="#inicio">Início</a></small>
+    <p></p>
+    <ul>
+        <li><a href="http://dio.me" target="_blank">http://dio.me</a></li>
+        <li><a href="http://w3c.org" target="_blank">http://w3c.org</a></li>
+        <li><a target="_blank"
+                href="https://developer.mozilla.org/pt-BR/docs/Learn_web_development/Core/Structuring_content/HTML_video_and_audio">https://developer.mozilla.org/pt-BR/docs/Learn_web_development/Core/Structuring_content/HTML_video_and_audio</a>
+        </li>
+        <li><a target="_blank"
+                href="http://www.linhadecodigo.com.br/artigo/3439/introducao-ao-html-usando-tabelas-em-html.aspx#:~:text=Dentro%20da%20tag%20%E2%80%9Cthead%E2%80%9D%2C,me%20mandem%20um%20e%2Dmail.">http://www.linhadecodigo.com.br/artigo/3439/introducao-ao-html-usando-tabelas-em-html.aspx#:~:text=Dentro%20da%20tag%20%E2%80%9Cthead%E2%80%9D%2C,me%20mandem%20um%20e%2Dmail.</a>
+        </li>
+    </ul>
+
+</body>
+
+</html>
